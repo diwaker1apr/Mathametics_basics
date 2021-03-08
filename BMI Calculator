@@ -1,0 +1,17 @@
+#THIS IS BMI CALCULATOR 
+#HERE WILL ASK USER'S WEIGHT IN KG AND HEIGHT IN CM
+print('Welcome to body mass index calculator! ')
+kg=float(input('Please enter your weight in kg: '))
+m=float(input('Please tell your height in m: '))
+#to calculate bmi formula is bmi= weight/height2
+bmi=round(kg/(m*m),2)
+if bmi < 18.5:
+    print(f'You need to increase your weight,Your BMI is {bmi} you are underweight!')
+elif bmi < 25:
+    print(f'Your BMI is {bmi} You are perfect!')
+elif bmi < 30:
+    print(f'You need to reduce littlebit of your weight,Your BMI is {bmi} You are slightly overweight!')
+elif bmi < 35:
+    print(f"You should take care of yourself,your BMI is {bmi} Semms like you are Obeses!")
+else:
+    print(f"You should consult with your doctor, as you fall under Clinically Obeses! Your BMI is {bmi}")
